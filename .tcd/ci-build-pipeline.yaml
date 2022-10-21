@@ -41,6 +41,8 @@ tasks:
       parameters:
         - name: registry
           value: tcr.tks.trueidc.com/sandbox-private
+        - name: imageName
+          value: result
 
 
 ## - Array of reusable templates
