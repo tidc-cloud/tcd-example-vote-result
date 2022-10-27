@@ -28,7 +28,8 @@ var dbUsername = process.env.DB_USERNAME;
 var dbPassword = process.env.DB_PASSWORD;
 
 var pool = new pg.Pool({
-  connectionString: 'postgres://' + dbUsername + ':' +dbPassword +'@' + dbHost + '/postgres'
+  // connectionString: 'postgres://' + dbUsername + ':' + dbPassword +'@' + dbHost + '/postgres'
+  connectionString: 'postgres://' + dbUsername + ':' + dbPassword +'@' + dbHost
 });
 
 async.retry(
